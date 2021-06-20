@@ -6,8 +6,8 @@ public class MovieDriver {
 		Movie movie = new Movie();
 		Scanner scanner = new Scanner(System.in);
 
-		// task 1
-		System.out.println("Enter the name of movie");
+		// task 1 
+		/*System.out.println("Enter the name of movie");
 	    movie.setTitle(scanner.nextLine());
 		
 		System.out.println("Enter the rating of the movie");
@@ -20,10 +20,9 @@ public class MovieDriver {
 		String tooutstr = movie.toString();
 		System.out.println(tooutstr);
 		
-		System.out.println("Goodbye");
+		System.out.println("Goodbye"); */
 		
-		// task 2
-		/* 
+		// task 2		
 		while (true)
 		{		
 		    System.out.println("Enter the name of movie");
@@ -45,7 +44,7 @@ public class MovieDriver {
 	            System.out.println("Goodbye");
 	            break;
 		    }
-		}    */
+		}    
 		scanner.close();
 	} 
 
