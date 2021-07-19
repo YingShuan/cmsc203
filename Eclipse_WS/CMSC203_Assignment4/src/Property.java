@@ -1,4 +1,19 @@
 
+/*
+ * Pseudocode
+ * 1. start
+ * 2. declare all variables to private
+ * 3. let city, owner, and propertyName be empty, and rentAmount be 0.0
+ * 4. for Plot, sets the x, y values to zero, depth and width to 1
+ * 5. creates a new object using the information of the object passed to it
+ * 6. Parameterized Constructor, no Plot information provided
+ * 7. Parameterized Constructor with Plot
+ * 8. return city, owner, propertyName, and rentAmount
+ * 9. set the Plot values and return the Plot instance
+ * 10. set the city, owner, propertyName, and rentAmount
+ * 11. Prints out the name, city, owner and rent amount for a property
+ * 12. end
+ */
 public class Property extends java.lang.Object{
 	private String city;
 	private String owner;
@@ -84,6 +99,7 @@ public class Property extends java.lang.Object{
 		ret += "     Located in " + city + "\r\n";
 		ret += "     Belonging to " + owner + "\r\n";
 		ret += "     Rent Amount " + String.valueOf(rentAmount) + "\r\n";
+		
 		return ret; 
 	}
 }

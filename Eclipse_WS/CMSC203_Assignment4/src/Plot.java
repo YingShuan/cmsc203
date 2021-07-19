@@ -1,3 +1,20 @@
+/*
+ * Pseudocode
+ * 1. start
+ * 2. declare all variables to private
+ * 3. creates a default Plot with args x=0, y=0, width=1, depth=1
+ * 4. creates a new object using the information of the object passed to it
+ * 5. Parameterized Constructor
+ * 6. determines if this plot overlaps the parameter,returns true if the two plots overlap, false otherwise
+ * 7. takes a Plot instance and determines if the current plot contains it
+ * 8. Sets the x value, and returns the x value
+ * 9. Sets the y value, and returns the y value
+ * 10. Sets the width value, and returns the width value
+ * 11. Sets the depth value, and returns the depth value
+ * 12. Prints the X,Y of the upper left corner, the width and the depth
+ * 13. end
+ */
+
 /**
  * Represents a Plot object
  * 

@@ -1,5 +1,30 @@
 
-
+/*
+ * Class: CMSC203 47729
+ * Instructor: Pro. Grigoriy Grinberg
+ * Description: This is an application that lets the user create a management company. They will build to rent and charges them a management fee as the percentages of the monthly rental amount. The properties cannot overlap each other, and each property must be within the limits of the management company¡¦s plot.
+ * Due: 7/19/2021
+ * Platform/compiler: Eclipse
+ * I pledge that I have completed the programming assignment independently.
+   I have not copied the code from a student or any source.
+   I have not given my code to any student.
+   Print your Name here: YingShuan Lin
+   
+   
+ * Pseudocode
+ * 1. start
+ * 2. declare all variables
+ * 3. create a management company
+ * 4. add three properties, with plots
+ * 5. set mgmt co to null
+ * 6. add property with 4 args and default plot (0,0,1,1)
+ * 7. add property with 8 args
+ * 8. add property that exceeds the size of the mgmt co array and can not be added, add property should return -1
+ * 9. test if maxRentProp contains the maximum rent of properties
+ * 10. test if totalRent returns the total rent of properties
+ * 11. end
+ * 
+ */
 import static org.junit.Assert.*;
 
 import org.junit.After;
@@ -13,7 +38,7 @@ public class ManagementCompanyTestSTUDENT {
 	@Before
 	public void setUp() throws Exception {
 		//student create a management company
-		m= new ManagementCompany("Sharon", "745632333",3);
+		m= new ManagementCompany("YingShuan", "745632333",3);
 		
 		//student add three properties, with plots, to mgmt co
 		p1 = new Property ("Mist", "Maryland", 2343, "Andy Jones",1,1,1,1);
