@@ -1,15 +1,3 @@
-/*
- * Class: CMSC203 47729
- * Instructor: Pro. Grigoriy Grinberg
- * Description: Prepare bonuses to their employees in Retail District #5 as required. The bonuses are calculated based on how much each retail store sold in each category. * Due: 7/26/2021
- * Programmer: YingShuan Lin
- * Platform/compiler: Eclipse
- * I pledge that I have completed the programming assignment independently.
-   I have not copied the code from a student or any source.
-   I have not given my code to any student.
-   Print your Name here: YingShuan Lin
-   */
-
 import java.util.ArrayList;
 import java.util.*;
 import java.io.*;
@@ -17,7 +5,6 @@ import java.io.*;
 
 public class TwoDimRaggedArrayUtility extends java.lang.Object {
 
-//	Returns the average of the elements in the two dimensional array	
 	public static double getAverage(double[][] data) {
 		
 		double sum = 0;
@@ -39,7 +26,7 @@ public class TwoDimRaggedArrayUtility extends java.lang.Object {
 		return average;
 	}
 	
-//	Returns the total of the selected column in the two dimensional array index 0 refers to the first column	
+	
 	public static double getColumnTotal(double[][] data, int col){
         double sum = 0;	
         for (int i = 0; i < data.length; i++) {
@@ -50,7 +37,7 @@ public class TwoDimRaggedArrayUtility extends java.lang.Object {
         return sum;
 	}
       
-//	Returns the largest element in the two dimensional array	
+	
 	public static double getHighestInArray(double[][] data){
 		double max = -Double.MAX_VALUE;		
 		for (int i = 0; i < data.length; i++) {
@@ -63,7 +50,6 @@ public class TwoDimRaggedArrayUtility extends java.lang.Object {
 		return max;
 	}
 	
-//	Returns the largest element of the selected column in the two dimensional array index 0 refers to the first column	
 	public static double getHighestInColumn(double[][] data, int col) {
 		double max = -Double.MAX_VALUE;		
 		for (int i = 0; i < data.length; i++) {
@@ -76,7 +62,7 @@ public class TwoDimRaggedArrayUtility extends java.lang.Object {
 		return max;
 	}
 	
-//	Returns index of the largest element of the selected column in the two dimensional array index 0 refers to the first column	
+	
 	public static int getHighestInColumnIndex(double[][] data, int col) {
 		double max = -Double.MAX_VALUE;		
 		int index = 0;
@@ -92,7 +78,7 @@ public class TwoDimRaggedArrayUtility extends java.lang.Object {
 	
 	}
 	
-//	Returns the largest element of the selected row in the two dimensional array index 0 refers to the first row	
+	
 	public static double getHighestInRow(double[][] data, int row) {
 		double max = -Double.MAX_VALUE;		
 		if(row >= data.length) {
@@ -107,7 +93,7 @@ public class TwoDimRaggedArrayUtility extends java.lang.Object {
 		return max;
 	}
 	 
-//	Returns the largest element of the selected row in the two dimensional array index 0 refers to the first row	
+	
 	public static int getHighestInRowIndex(double[][] data, int row) {
 		double max = -Double.MAX_VALUE;
 		if(row >= data.length) {
@@ -124,7 +110,7 @@ public class TwoDimRaggedArrayUtility extends java.lang.Object {
 		return index;
 	}
 	
-//	Returns the smallest element in the two dimensional array	
+	
 	public static double getLowestInArray(double[][] data) {
 		double min = Double.MAX_VALUE;
 		for (int i = 0; i < data.length; i++) {
@@ -138,7 +124,7 @@ public class TwoDimRaggedArrayUtility extends java.lang.Object {
 	}
 	
 	
-//	Returns the smallest element of the selected column in the two dimensional array index 0 refers to the first column	
+	
 	public static double getLowestInColumn(double[][] data, int col) {
 		double min = Double.MAX_VALUE;
 		for (int i = 0; i < data.length; i++) {
@@ -153,7 +139,7 @@ public class TwoDimRaggedArrayUtility extends java.lang.Object {
 	}
 	
 	
-//	Returns the index of the smallest element of the selected column in the two dimensional array index 0 refers to the first column	
+	
 	public static int getLowestInColumnIndex(double[][] data, int col) {
 		double min = Double.MAX_VALUE;
 		int index = 0;
@@ -169,7 +155,7 @@ public class TwoDimRaggedArrayUtility extends java.lang.Object {
 	
 	}
 	
-//	Returns the smallest element of the selected row in the two dimensional array index 0 refers to the first row.	
+	
 	public static double getLowestInRow(double[][] data, int row) {
 		double min = Double.MAX_VALUE;
 		if(row >= data.length) {
@@ -183,7 +169,7 @@ public class TwoDimRaggedArrayUtility extends java.lang.Object {
 	return min;
 	}
 	
-//	Returns the index of the smallest element of the selected row in the two dimensional array index 0 refers to the first row	
+	
 	public static int getLowestInRowIndex(double[][] data, int row) {
 		double min = Double.MAX_VALUE;
 		if(row >= data.length) {
@@ -202,7 +188,7 @@ public class TwoDimRaggedArrayUtility extends java.lang.Object {
 	}
 	
 	
-//	Returns the total of the selected row in the two dimensional array index 0 refers to the first row	
+	
 	public static double getRowTotal(double[][] data, int row) {
 		double sum = 0;
 		if(row >= data.length)
@@ -215,7 +201,7 @@ public class TwoDimRaggedArrayUtility extends java.lang.Object {
 
 
 	
-//	Returns the total of all the elements of the two dimensional array	
+	
 	public static double getTotal(double[][] data) {
 		double sum = 0;
 		for (int i = 0; i < data.length; i++) {
@@ -227,11 +213,6 @@ public class TwoDimRaggedArrayUtility extends java.lang.Object {
 	}
 	
 	// @SuppressWarnings("finally")
-	
-//	Reads from a file and returns a ragged array of doubles 
-//	The maximum rows is 10 and the maximum columns for each row is 10 
-//	Each row in the file is separated by a new line 
-//	Each element in the row is separated by a space
 	public static double[][] readFile(java.io.File file){
 		String strAry[] = new String[10];
 		double[][] array;
@@ -260,9 +241,7 @@ public class TwoDimRaggedArrayUtility extends java.lang.Object {
 			return null;
 		}
 	}
-
 	
-//	Writes the ragged array of doubles into the file	
 	public static void writeToFile(double[][] data, java.io.File outputFile){
 		System.out.println(outputFile.getPath());	
 		BufferedWriter fileWriter;
